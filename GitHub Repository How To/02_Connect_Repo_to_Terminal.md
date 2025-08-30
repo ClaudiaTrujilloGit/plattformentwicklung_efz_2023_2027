@@ -44,7 +44,7 @@ git --version
 cd /path/createdFolder
 ```
 
-**Initialize Git and configure Git**
+**Initialize and configure Git**
 ```
 git init
 git config --global user.name "github-username"
