@@ -50,13 +50,21 @@ git init
 
 **Configure Git**
 ```
-git config user.name "github-username"
-git config user.email "email-address-used-for-the-github-account"
+git config --global user.name "github-username"
+git config --global user.email "email-address-used-for-the-github-account"
+```
+
+**Connect to the repository**
+```
+git remote add origin https://github.com/[github-username]/[repository-name].git
+
+<!-- check if you have access to the repository -->
+git remote -v
 ```
 
 **Add, clone and connect to repository**
 ```
-git remote add origin "https://github.com/[github-username]/[repository-name].git"
+
 git clone https://github.com/[github-username]/[repository-name].git
 git remote set-url origin git@github.com:[github-username]/[repository-name].git
 ```
