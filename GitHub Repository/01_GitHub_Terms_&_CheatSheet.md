@@ -32,6 +32,7 @@
 | Command | Description |
 | ----------- | ----------- |
 | `git branch` | List local branches and show the current branch (`*`).  |
+| `git branch -v` | Lists all branches in the repository and provides additional information about each branch (local). |
 | `git branch -r` | List remote branches. |
 | `git branch <branch-name>` | Create branch. |
 | `git branch -b <branch-name>` | Create branch and switch to it. |
@@ -83,19 +84,19 @@
 
 # GitHub Quick Workflow
 
-1. Delete files/folders → `rm` (Linux) or `git rm` (Git).  
-2. Stage changes → `git add <path>` or `git add -u`.  
+1. Delete files/folders ->`rm` (Linux) or `git rm` (Git).  
+2. Stage changes ->`git add <path>` or `git add -u`.  
     - ❌ Undo staged file: `git restore --staged <file>` 
-3. Commit changes → `git commit -m "message"`.  
+3. Commit changes ->`git commit -m "message"`.  
     - ❌ Wrong commit message (last commit only): `git commit --amend -m "new message"`  
     - ❌ Wrong commit entirely:  
         - Keep changes (unstage): `git reset --soft HEAD~1`  
         - Discard changes (dangerous): `git reset --hard HEAD~1`  
-4. Push to remote → `git push origin <branch>`.  
+4. Push to remote ->`git push origin <branch>`.  
     - ❌ Undo last push (if safe):  
         - Rewrite history and force push: `git push origin <branch> --force`  
         ⚠️ Use only if no one else depends on that branch.  
 5. Sync with remote
     - Update info: `git fetch`  
     - Reset local to match remote: `git reset --hard origin/<branch>`  
-6. View commits → `git log`, `git show`, `git diff`.  
+6. View commits ->`git log`, `git show`, `git diff`.  
