@@ -1,7 +1,5 @@
 # GitHub Dictionary
 
-# Git & Linux Terms Dictionary (Alphabetical)
-
 | Term | Description |
 |------|-------------|
 | Branch | A separate line of development in Git. Each branch can have its own commits. |
