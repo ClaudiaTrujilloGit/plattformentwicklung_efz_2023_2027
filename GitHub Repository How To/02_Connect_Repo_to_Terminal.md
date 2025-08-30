@@ -1,9 +1,6 @@
 # Description
 In this example I'll connect a GitHub repository to my WSL terminal using an SSH-Key.
 
-
-# Connect repository to the terminal
-
 ## Previous Steps
 **Create an SSH-Key and add it to the repo**
 ```
@@ -33,7 +30,7 @@ ssh -T git@github.com
 mkdir /path/[folder-name]
 ```
 
-## Procedure
+## Connect repository to the terminal
 
 **Install Git**
 ```
@@ -42,14 +39,14 @@ sudo apt install git
 git --version
 ```
 
-**Initialize Git**
+**Create a folder for the repo**
 ```
 cd /path/createdFolder
-git init
 ```
 
-**Configure Git**
+**Initialize Git and configure Git**
 ```
+git init
 git config --global user.name "github-username"
 git config --global user.email "email-address-used-for-the-github-account"
 ```
@@ -57,9 +54,11 @@ git config --global user.email "email-address-used-for-the-github-account"
 **Connect to the repository**
 ```
 git remote add origin https://github.com/[github-username]/[repository-name].git
-
-<!-- check if you have access to the repository -->
 git remote -v
+
+(output)
+origin  git@github.com:[github-username]/[repository-name].git (fetch)
+origin  git@github.com:[github-username]/[repository-name].git (push)
 ```
 
 **Set access token**
@@ -74,12 +73,12 @@ git switch main
 git pull origin
 ```
 
+<br>
+
+Now it's done.
+
 ## Try your first commit
 1. touch text.txt
 2. git add .
 3. git commit -m "test commit"
 4. git push origin
-
-
-```
-```
