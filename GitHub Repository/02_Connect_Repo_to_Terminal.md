@@ -54,19 +54,16 @@ git config user.name "github-username"
 git config user.email "email-address-used-for-the-github-account"
 ```
 
-**Add repository**
+**Add, clone and connect to repository**
 ```
 git remote add origin "https://github.com/[github-username]/[repository-name].git"
-```
-
-**Clone repository**
-```
 git clone https://github.com/[github-username]/[repository-name].git
+git remote set-url origin git@github.com:[github-username]/[repository-name].git
 ```
 
-**Fetch branches**
+**Bring remote changes into your local branch**
 ```
-git fetch -all
+git pull
 ```
 
 ## Try your first commit
