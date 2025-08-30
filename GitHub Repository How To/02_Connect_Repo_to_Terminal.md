@@ -1,7 +1,7 @@
 # Description
 In this example I'll connect a GitHub repository to my WSL terminal using an SSH-Key.
 
-## Previous Steps
+# Previous Steps
 **Create an SSH-Key and add it to the repo**
 ```
 ssh-keygen -t ed25519 -C "email-address-used-for-the-github-account"
@@ -30,7 +30,7 @@ ssh -T git@github.com
 mkdir /path/[folder-name]
 ```
 
-## Connect repository to the terminal
+# Connect repository to the terminal
 
 **Install Git**
 ```
