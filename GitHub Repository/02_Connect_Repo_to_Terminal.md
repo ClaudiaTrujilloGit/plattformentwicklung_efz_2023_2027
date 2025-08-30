@@ -62,27 +62,24 @@ git remote add origin https://github.com/[github-username]/[repository-name].git
 git remote -v
 ```
 
-**Add, clone and connect to repository**
+**Set access token**
 ```
-
-git clone https://github.com/[github-username]/[repository-name].git
 git remote set-url origin git@github.com:[github-username]/[repository-name].git
 ```
 
-**Bring remote changes into your local branch**
+**Bring remote commits into your local branch**
 ```
-git pull
+git fetch origin
+git switch main
+git pull origin
 ```
 
 ## Try your first commit
-1. Create a file -> `touch text.txt`
-2. Stage changes -> `git add -u`.
-3. Commit changes ->`git commit -m "message"`.  
-4. Push to remote ->`git push origin <branch>`.  
-5. Sync with remote
-    - Update info: `git fetch`  
-    - Reset local to match remote: `git reset --hard origin/[default-branch]`  
-6. View commits ->`git log`, `git show`, `git diff`.  
+1. touch text.txt
+2. git add .
+3. git commit -m "test commit"
+4. git push origin
+
 
 ```
 ```
