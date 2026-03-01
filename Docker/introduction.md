@@ -96,6 +96,7 @@ docker network prune                            : Remove unused networks.
 journalctl -u docker.service                    : See Docker logs.
 docker inspect <image> or <container id>        : Shows container or images details.
 docker top <container id>                       : Shows processes inside the container.
+docker compose up                               : Starts a multi-container app.
 ```
 
 ## Install Docker (Ubuntu)
